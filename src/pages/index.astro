@@ -1,19 +1,48 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
+<Layout title="Derivadas Matemáticas">
+    <h1 class="mb-10">Derivadas Matemáticas</h1>
+
+    <h2>¿Qué es una derivada?</h2>
     <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+        Una derivada es una herramienta matemática que permite medir cómo cambia una función respecto a una variable.
+        Se utiliza para analizar velocidades, crecimiento, máximos, mínimos y muchos fenómenos de la vida real.
+    </p>
+
+    <h2>Fórmula básica</h2>
+    <p>
+        f'(x) = lim [f(x+h) - f(x)] / h
+    </p>
+
+    <h2>Reglas de derivación</h2>
+    <ul>
+        <li>Derivada de una constante: 0</li>
+        <li>Derivada de xⁿ: n·xⁿ⁻¹</li>
+        <li>Derivada de una suma: se derivan los términos por separado</li>
+        <li>Derivada de un producto: regla del producto</li>
+        <li>Derivada de un cociente: regla del cociente</li>
+    </ul>
+
+    <h2>Ejemplo</h2>
+    <p>
+        Si f(x) = x², entonces:
+    </p>
+    <p>
+        f'(x) = 2x
+    </p>
+
+    <h2>Aplicaciones</h2>
+    <ul>
+        <li>Física: velocidad y aceleración.</li>
+        <li>Economía: costos e ingresos marginales.</li>
+        <li>Ingeniería: optimización de procesos.</li>
+        <li>Biología: crecimiento de poblaciones.</li>
+    </ul>
+
+    <h2>Conclusión</h2>
+    <p>
+        Las derivadas son fundamentales en el cálculo porque permiten estudiar cambios y resolver problemas relacionados con la optimización y el movimiento.
     </p>
 </Layout>
